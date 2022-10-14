@@ -1,0 +1,149 @@
+.about-three {
+	width: 100%;
+	background: #181818;
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+
+
+	.red-card {
+		height: 798px;
+		width: 93%;
+		background: #AD0A0E;
+
+
+
+		.red-card__container {
+			position: relative;
+			max-width: 1440px;
+			// width: 1123px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.red-card__background {
+			position: absolute;
+			top: 5%;
+			left: 20%;
+			max-width: 894px;
+			max-height: 702px;
+		}
+
+		.bckg {
+			width: 100%;
+		}
+
+		.red-card__text-content {
+			padding: 30px 80px;
+			max-width: 740px;
+			background: transparent;
+			height: 100%;
+			z-index: 2;
+		}
+
+		.content {
+			font-weight: 400;
+			font-size: 22px;
+			line-height: 29px;
+
+			color: #FFFFFF;
+		}
+
+		.red-card__bottle {
+			height: 1249px;
+			width: 375px;
+			z-index: 1;
+		}
+
+		.red-card__bottle::before {
+			content: "";
+			position: absolute;
+			background: radial-gradient(50% 50% at 50% 50%, #000000 51.56%, rgba(0, 0, 0, 0) 100%);
+			filter: blur(12px);
+			bottom: 0;
+			width: 268px;
+			height: 57px;
+			top: 71%;
+			transform: translate(-10%, -100%);
+		}
+
+		.red-card__bottle::after {
+			content: "";
+			position: absolute;
+			background: #191919;
+			filter: blur(58px);
+			bottom: 0;
+			width: 511px;
+			height: 162px;
+			top: 90%;
+			transform: translate(-90%, -100%);
+		}
+
+		.bottle {
+
+			position: relative;
+			transform: translate(-10%, -15%);
+			filter: drop-shadow(60px 30px 60px rgba(0, 0, 0, 0.22));
+			// opacity: .5;
+		}
+
+		.un-bottle {
+			position: relative;
+			top: -10%;
+			transform: translate(-12%, -100%);
+			opacity: 0.5;
+			filter: blur(1px);
+		}
+
+		@media (max-width:1269px) {
+			.red-card__bottle {
+				right: 0;
+				position: absolute;
+				opacity: .6;
+			}
+		}
+
+		@media (max-width:872px) {
+			.content {
+				font-size: 20px;
+				line-height: 24px;
+			}
+		}
+
+		@media (max-width:689px) {
+			.content {
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+
+		@media (max-width:586px) {
+			.content {
+				font-size: 16px;
+				line-height: 19px;
+			}
+
+			.red-card__text-content {
+				padding: 15px 40px;
+
+			}
+		}
+
+		@media (max-width:393px) {
+			.content {
+				font-size: 14px;
+				line-height: 18px;
+			}
+
+			.red-card__text-content {
+				padding: 13px 35px;
+
+			}
+		}
+
+	}
+
+}

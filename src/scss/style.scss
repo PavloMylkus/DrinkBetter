@@ -1,0 +1,17 @@
+.container {
+	box-sizing: border-box;
+	max-width: 976px;
+	margin: 0 auto;
+	padding: 0 60px;
+}
+
+@import "typo";
+@import "navbar";
+@import "mainBlock";
+@import "blockTwo";
+@import "about";
+@import "about-two";
+@import "about-three";
+@import "about-three-form";
+@import "vine-card";
+@import "footer";

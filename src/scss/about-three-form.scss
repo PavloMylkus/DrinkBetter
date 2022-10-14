@@ -1,0 +1,175 @@
+.block-form {
+	padding-top: 50px;
+	padding-bottom: 130px;
+	width: 100%;
+	background: #181818;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: -1px;
+		width: 100%;
+		height: 210px;
+		clip-path: polygon(80% 68%, 0% 100%, 100% 100%);
+		background: #fff;
+	}
+
+	.container {}
+
+	.block-form__card {
+
+		margin: 0 auto;
+		position: relative;
+		max-width: 640px;
+		background: #fff;
+		padding: 65px;
+		z-index: 2;
+
+	}
+
+	h6,
+	h2 {
+		text-align: center;
+		font-weight: 700;
+		margin-top: 0;
+	}
+
+	.small-title {
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	.big-title {
+		max-width: 374px;
+		font-size: 64px;
+		line-height: 77px;
+	}
+
+	.text-content {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		margin-top: 0;
+		color: #232323;
+	}
+
+	.block-form__text-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	.block-form__btn {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.button_text_container.form-btn {
+		font-weight: 300;
+		font-size: 18px;
+		color: #000000;
+
+	}
+
+	.button_su_inner_btn,
+	.button_su_btn {
+		width: 100%;
+	}
+
+	.button_su_inner_btn {
+		color: #fff;
+		font-size: 18px;
+		font-weight: 700;
+		text-align: center;
+		padding: 19px 22px;
+	}
+
+	.button_su_btn {
+		height: 64px;
+		margin-top: 18px;
+		margin-left: 0;
+		background-color: #890a0d;
+		border: 0;
+		transition: all .3s;
+
+		&:hover {
+			background-color: #ec0b10;
+			-webkit-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.78);
+			box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.78);
+		}
+	}
+
+	form {
+		width: 100%;
+	}
+
+	input {
+		width: 100%;
+		height: 64px;
+		border: 2px solid #890a0d;
+		text-align: center;
+		font-weight: 300;
+		font-size: 18px;
+		color: #000000;
+	}
+
+	@media (max-width:590px) {
+		padding-bottom: 50px;
+
+		&::before {
+			height: 120px;
+		}
+
+		.block-form__card {
+			padding: 35px;
+
+		}
+
+		.small-title {
+			font-size: 16px;
+		}
+
+		.big-title {
+
+			font-size: 48px;
+			line-height: 52px;
+		}
+
+		.text-content {
+			font-size: 16px;
+			line-height: 24px;
+
+		}
+	}
+
+	@media (max-width:460px) {
+		.container {
+			padding: 0 20px;
+		}
+
+		.block-form__card {
+			padding: 25px;
+
+		}
+
+		.small-title {
+			font-size: 14px;
+		}
+
+		.big-title {
+
+			font-size: 34px;
+			line-height: 40px;
+		}
+
+		.text-content {
+			font-size: 14px;
+			line-height: 22px;
+
+		}
+	}
+
+}

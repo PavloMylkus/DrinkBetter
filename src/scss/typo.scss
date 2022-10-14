@@ -1,0 +1,38 @@
+* {
+	box-sizing: inherit;
+}
+
+p {
+	font-family: 'Commissioner', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Commissioner', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Bitter', serif;
+}
+
+h2 {
+	max-width: 700px;
+	font-weight: 700;
+	font-size: 87px;
+	line-height: 104px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.fz-18 {
+	font-size: 18px;
+}
